@@ -21,5 +21,5 @@
   <color name="gray_light">#F5F5F5</color>  
 
   <color name="tabSelectedTextColor">#90CAF9</color>  
-    
+  <color name="splash_background">#FFFFFF</color>  
 </resources>

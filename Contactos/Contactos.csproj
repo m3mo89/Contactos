@@ -109,6 +109,7 @@
     <Compile Include="Helpers\ImageAssetManager.cs" />
     <Compile Include="ContactoDetalleActivity.cs" />
     <Compile Include="Helpers\SectionIndexerBuilder.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -145,6 +146,8 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\ic_call_black_24dp.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_call_black_24dp.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_call_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\drawable\splash_contacto.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

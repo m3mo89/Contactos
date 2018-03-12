@@ -6,7 +6,7 @@ using Contactos.Adapters;
 
 namespace Contactos
 {
-    [Activity(Label = "Contactos", MainLauncher = true)]
+    [Activity(Label = "Contactos")]
     public class MainActivity : Android.Support.V4.App.FragmentActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

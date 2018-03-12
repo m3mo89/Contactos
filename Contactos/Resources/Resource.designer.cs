@@ -1220,44 +1220,44 @@ namespace Contactos
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a005e
-			public const int abc_background_cache_hint_selector_material_dark = 2131361886;
-			
 			// aapt resource value: 0x7f0a005f
-			public const int abc_background_cache_hint_selector_material_light = 2131361887;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361887;
 			
 			// aapt resource value: 0x7f0a0060
-			public const int abc_btn_colored_borderless_text_material = 2131361888;
+			public const int abc_background_cache_hint_selector_material_light = 2131361888;
 			
 			// aapt resource value: 0x7f0a0061
-			public const int abc_btn_colored_text_material = 2131361889;
+			public const int abc_btn_colored_borderless_text_material = 2131361889;
 			
 			// aapt resource value: 0x7f0a0062
-			public const int abc_color_highlight_material = 2131361890;
+			public const int abc_btn_colored_text_material = 2131361890;
 			
 			// aapt resource value: 0x7f0a0063
-			public const int abc_hint_foreground_material_dark = 2131361891;
+			public const int abc_color_highlight_material = 2131361891;
 			
 			// aapt resource value: 0x7f0a0064
-			public const int abc_hint_foreground_material_light = 2131361892;
+			public const int abc_hint_foreground_material_dark = 2131361892;
+			
+			// aapt resource value: 0x7f0a0065
+			public const int abc_hint_foreground_material_light = 2131361893;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int abc_input_method_navigation_guard = 2131361796;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int abc_primary_text_disable_only_material_dark = 2131361893;
-			
 			// aapt resource value: 0x7f0a0066
-			public const int abc_primary_text_disable_only_material_light = 2131361894;
+			public const int abc_primary_text_disable_only_material_dark = 2131361894;
 			
 			// aapt resource value: 0x7f0a0067
-			public const int abc_primary_text_material_dark = 2131361895;
+			public const int abc_primary_text_disable_only_material_light = 2131361895;
 			
 			// aapt resource value: 0x7f0a0068
-			public const int abc_primary_text_material_light = 2131361896;
+			public const int abc_primary_text_material_dark = 2131361896;
 			
 			// aapt resource value: 0x7f0a0069
-			public const int abc_search_url_text = 2131361897;
+			public const int abc_primary_text_material_light = 2131361897;
+			
+			// aapt resource value: 0x7f0a006a
+			public const int abc_search_url_text = 2131361898;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int abc_search_url_text_normal = 2131361797;
@@ -1268,29 +1268,29 @@ namespace Contactos
 			// aapt resource value: 0x7f0a0007
 			public const int abc_search_url_text_selected = 2131361799;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int abc_secondary_text_material_dark = 2131361898;
-			
 			// aapt resource value: 0x7f0a006b
-			public const int abc_secondary_text_material_light = 2131361899;
+			public const int abc_secondary_text_material_dark = 2131361899;
 			
 			// aapt resource value: 0x7f0a006c
-			public const int abc_tint_btn_checkable = 2131361900;
+			public const int abc_secondary_text_material_light = 2131361900;
 			
 			// aapt resource value: 0x7f0a006d
-			public const int abc_tint_default = 2131361901;
+			public const int abc_tint_btn_checkable = 2131361901;
 			
 			// aapt resource value: 0x7f0a006e
-			public const int abc_tint_edittext = 2131361902;
+			public const int abc_tint_default = 2131361902;
 			
 			// aapt resource value: 0x7f0a006f
-			public const int abc_tint_seek_thumb = 2131361903;
+			public const int abc_tint_edittext = 2131361903;
 			
 			// aapt resource value: 0x7f0a0070
-			public const int abc_tint_spinner = 2131361904;
+			public const int abc_tint_seek_thumb = 2131361904;
 			
 			// aapt resource value: 0x7f0a0071
-			public const int abc_tint_switch_track = 2131361905;
+			public const int abc_tint_spinner = 2131361905;
+			
+			// aapt resource value: 0x7f0a0072
+			public const int abc_tint_switch_track = 2131361906;
 			
 			// aapt resource value: 0x7f0a004e
 			public const int accent = 2131361870;
@@ -1367,8 +1367,8 @@ namespace Contactos
 			// aapt resource value: 0x7f0a0040
 			public const int design_bottom_navigation_shadow_color = 2131361856;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int design_error = 2131361906;
+			// aapt resource value: 0x7f0a0073
+			public const int design_error = 2131361907;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int design_fab_shadow_end_color = 2131361857;
@@ -1394,8 +1394,8 @@ namespace Contactos
 			// aapt resource value: 0x7f0a0048
 			public const int design_snackbar_background_color = 2131361864;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int design_tint_password_toggle = 2131361907;
+			// aapt resource value: 0x7f0a0074
+			public const int design_tint_password_toggle = 2131361908;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int dim_foreground_disabled_material_dark = 2131361814;
@@ -1544,17 +1544,20 @@ namespace Contactos
 			// aapt resource value: 0x7f0a0038
 			public const int secondary_text_disabled_material_light = 2131361848;
 			
+			// aapt resource value: 0x7f0a005e
+			public const int splash_background = 2131361886;
+			
 			// aapt resource value: 0x7f0a0039
 			public const int switch_thumb_disabled_material_dark = 2131361849;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int switch_thumb_disabled_material_light = 2131361850;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int switch_thumb_material_dark = 2131361908;
-			
 			// aapt resource value: 0x7f0a0075
-			public const int switch_thumb_material_light = 2131361909;
+			public const int switch_thumb_material_dark = 2131361909;
+			
+			// aapt resource value: 0x7f0a0076
+			public const int switch_thumb_material_light = 2131361910;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int switch_thumb_normal_material_dark = 2131361851;
@@ -2326,26 +2329,26 @@ namespace Contactos
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02006a
-			public const int avd_hide_password_1 = 2130837610;
-			
-			// aapt resource value: 0x7f02006b
-			public const int avd_hide_password_2 = 2130837611;
-			
 			// aapt resource value: 0x7f02006c
-			public const int avd_hide_password_3 = 2130837612;
+			public const int avd_hide_password_1 = 2130837612;
+			
+			// aapt resource value: 0x7f02006d
+			public const int avd_hide_password_2 = 2130837613;
+			
+			// aapt resource value: 0x7f02006e
+			public const int avd_hide_password_3 = 2130837614;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02006d
-			public const int avd_show_password_1 = 2130837613;
-			
-			// aapt resource value: 0x7f02006e
-			public const int avd_show_password_2 = 2130837614;
-			
 			// aapt resource value: 0x7f02006f
-			public const int avd_show_password_3 = 2130837615;
+			public const int avd_show_password_1 = 2130837615;
+			
+			// aapt resource value: 0x7f020070
+			public const int avd_show_password_2 = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int avd_show_password_3 = 2130837617;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2392,11 +2395,11 @@ namespace Contactos
 			// aapt resource value: 0x7f020063
 			public const int notification_icon_background = 2130837603;
 			
-			// aapt resource value: 0x7f020068
-			public const int notification_template_icon_bg = 2130837608;
+			// aapt resource value: 0x7f02006a
+			public const int notification_template_icon_bg = 2130837610;
 			
-			// aapt resource value: 0x7f020069
-			public const int notification_template_icon_low_bg = 2130837609;
+			// aapt resource value: 0x7f02006b
+			public const int notification_template_icon_low_bg = 2130837611;
 			
 			// aapt resource value: 0x7f020064
 			public const int notification_tile_bg = 2130837604;
@@ -2405,10 +2408,16 @@ namespace Contactos
 			public const int notify_panel_notification_icon_bg = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int tooltip_frame_dark = 2130837606;
+			public const int splash_contacto = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int tooltip_frame_light = 2130837607;
+			public const int splash_screen = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int tooltip_frame_dark = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int tooltip_frame_light = 2130837609;
 			
 			static Drawable()
 			{
@@ -3922,6 +3931,9 @@ namespace Contactos
 			// aapt resource value: 0x7f090003
 			public const int CardView_Light = 2131296259;
 			
+			// aapt resource value: 0x7f090185
+			public const int MyTheme_Splash = 2131296645;
+			
 			// aapt resource value: 0x7f090022
 			public const int Platform_AppCompat = 2131296290;
 			
@@ -4006,11 +4018,11 @@ namespace Contactos
 			// aapt resource value: 0x7f09003c
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131296316;
 			
-			// aapt resource value: 0x7f090185
-			public const int TabLayoutHomeStyle = 2131296645;
-			
 			// aapt resource value: 0x7f090186
-			public const int TabTextHomeStyle = 2131296646;
+			public const int TabLayoutHomeStyle = 2131296646;
+			
+			// aapt resource value: 0x7f090187
+			public const int TabTextHomeStyle = 2131296647;
 			
 			// aapt resource value: 0x7f0900cb
 			public const int TextAppearance_AppCompat = 2131296459;
