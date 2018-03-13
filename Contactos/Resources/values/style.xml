@@ -2,9 +2,9 @@
 <resources>
     <style name="AppCompat" parent="Theme.AppCompat.Light.NoActionBar">
           <item name="colorPrimary">@color/primary</item>
-          <item name="colorPrimaryDark">@color/primary</item>
+          <item name="colorPrimaryDark">@color/primary_dark</item>
           <item name="colorAccent">@color/primary</item>
-
+          <item name="android:colorPrimaryDark">@color/primary_dark</item>
           <item name="windowActionBar">false</item>
           <item name="windowNoTitle">true</item>
     </style>
@@ -17,7 +17,7 @@
     
     <style name="TabLayoutHomeStyle" parent="Widget.Design.TabLayout">
         <item name="tabTextAppearance">@style/TabTextHomeStyle</item>
-        <item name="tabBackground">@color/blue_darker</item>
+        <item name="tabBackground">@color/primary</item>
         <item name="tabSelectedTextColor">@color/tabSelectedTextColor</item>
         <item name="tabIndicatorColor">@color/white</item>
         <item name="tabIndicatorHeight">4dp</item>

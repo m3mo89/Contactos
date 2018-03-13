@@ -110,6 +110,9 @@
     <Compile Include="ContactoDetalleActivity.cs" />
     <Compile Include="Helpers\SectionIndexerBuilder.cs" />
     <Compile Include="SplashActivity.cs" />
+    <Compile Include="Helpers\SearchViewExpandListener.cs" />
+    <Compile Include="Helpers\ContactoFilter.cs" />
+    <Compile Include="Helpers\ObjectExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -148,6 +151,23 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_call_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\splash_screen.xml" />
     <AndroidResource Include="Resources\drawable\splash_contacto.jpg" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\menu\actions.xml" />
+    <AndroidResource Include="Resources\menu\search.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
@@ -161,6 +181,7 @@
     <Folder Include="Data\" />
     <Folder Include="Helpers\" />
     <Folder Include="Assets\images\" />
+    <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\images\badluck.png" />

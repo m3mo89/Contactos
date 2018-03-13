@@ -11,9 +11,11 @@ using Contactos.Helpers;
 
 namespace Contactos.Adapters
 {
-    public class ContactosAdapter: BaseAdapter<Contacto>, ISectionIndexer
+    public class ContactosAdapter: BaseAdapter<Contacto>, ISectionIndexer, IFilterable
     {
-        List<Contacto> contactos;
+        public List<Contacto> originalData;
+        public List<Contacto> contactos;
+
         Java.Lang.Object[] sectionHeaders;
         Dictionary<int, int> positionForSectionMap;
         Dictionary<int, int> sectionForPositionMap;
@@ -25,6 +27,8 @@ namespace Contactos.Adapters
             sectionHeaders = SectionIndexerBuilder.BuildSectionHeaders(contactos);
             positionForSectionMap = SectionIndexerBuilder.BuildPositionForSectionMap(contactos);
             sectionForPositionMap = SectionIndexerBuilder.BuildSectionForPositionMap(contactos);
+
+            Filter = new ContactoFilter(this);
         }
 
         public override Contacto this[int position]
@@ -93,5 +97,12 @@ namespace Contactos.Adapters
         {
             return sectionForPositionMap[position];
         }
-    }
+
+        public Filter Filter { get; private set; }
+
+		public override void NotifyDataSetChanged()
+		{
+            base.NotifyDataSetChanged();
+		}
+	}
 }
