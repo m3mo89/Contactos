@@ -24,9 +24,9 @@ namespace Contactos.Adapters
         {
             this.contactos = contactos;
 
-            sectionHeaders = SectionIndexerBuilder.BuildSectionHeaders(contactos);
-            positionForSectionMap = SectionIndexerBuilder.BuildPositionForSectionMap(contactos);
-            sectionForPositionMap = SectionIndexerBuilder.BuildSectionForPositionMap(contactos);
+            sectionHeaders = SectionIndexerBuilder.BuildSectionHeaders(this.contactos);
+            positionForSectionMap = SectionIndexerBuilder.BuildPositionForSectionMap(this.contactos);
+            sectionForPositionMap = SectionIndexerBuilder.BuildSectionForPositionMap(this.contactos);
 
             Filter = new ContactoFilter(this);
         }
@@ -99,10 +99,5 @@ namespace Contactos.Adapters
         }
 
         public Filter Filter { get; private set; }
-
-		public override void NotifyDataSetChanged()
-		{
-            base.NotifyDataSetChanged();
-		}
 	}
 }

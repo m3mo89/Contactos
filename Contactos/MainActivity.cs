@@ -6,13 +6,14 @@ using Contactos.Adapters;
 using Android.Support.V4.View;
 using Contactos.Helpers;
 using Contactos.Data;
+using Android.Support.V4.App;
+using static Contactos.Fragments.ContactsFragment;
 
 namespace Contactos
 {
     [Activity(Label = "Contactos")]
     public class MainActivity : Android.Support.V7.App.AppCompatActivity
     {
-        private Android.Support.V7.Widget.SearchView _searchView;
         private Android.Support.V7.Widget.Toolbar toolbar;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -29,27 +30,27 @@ namespace Contactos
 
             var fragments = new Android.Support.V4.App.Fragment[]
             {
-                new Fragments.ContactsFragment(),
+                new Fragments.ContactsFragment(false),
+                new Fragments.ContactsFragment(true),
                 new Fragments.AboutFragment()
             };
 
-            var titles = CharSequence.ArrayFromStringArray(new [] { "Contactos", "Acerca de" }); 
+            var titles = CharSequence.ArrayFromStringArray(new [] { "Contactos", "Favoritos", "Acerca de" }); 
 
             var adapter = new HomeAdapter(base.SupportFragmentManager, fragments, titles);
 
             var viewPager = FindViewById<Android.Support.V4.View.ViewPager>(Resource.Id.viewPager);
 
             viewPager.Adapter = adapter;
-            viewPager.OffscreenPageLimit = 2;
+            viewPager.OffscreenPageLimit = 3;
 
             var tabLayout = FindViewById<Android.Support.Design.Widget.TabLayout>(Resource.Id.tabLayout);
             tabLayout.SetupWithViewPager(viewPager);
 
             tabLayout.GetTabAt(0).SetIcon(Resource.Mipmap.ic_contacts_white_24dp);
-            tabLayout.GetTabAt(1).SetIcon(Resource.Mipmap.ic_info_outline_white_24dp);
+            tabLayout.GetTabAt(1).SetIcon(Resource.Mipmap.ic_favorite_white_24dp);
+            tabLayout.GetTabAt(2).SetIcon(Resource.Mipmap.ic_info_outline_white_24dp);
         }
-
-
-    }
+	}
 }
 

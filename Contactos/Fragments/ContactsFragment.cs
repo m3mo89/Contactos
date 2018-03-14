@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
@@ -14,17 +17,27 @@ namespace Contactos.Fragments
     public class ContactsFragment: Android.Support.V4.App.Fragment
     {
         ContactosAdapter adapter;
+        List<Contacto> contactos;
+        ListView contactoList;
+        bool IsFavorite;
+
+        public ContactsFragment(bool isFavorite)
+        {
+            IsFavorite = isFavorite;
+        }
 
 		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
             var view = inflater.Inflate(Resource.Layout.Contacto, container, false);
 
-            var contactoList = view.FindViewById<ListView>(Resource.Id.contactoListView);
-            //contactoList.FastScrollEnabled = true;
+            contactoList = view.FindViewById<ListView>(Resource.Id.contactoListView);
             contactoList.ItemClick += OnItemClick;
 
-            adapter = new ContactosAdapter(ContactoData.Contacts);
-            contactoList.Adapter = adapter;
+            if (contactos != null)
+            {
+                adapter = new ContactosAdapter(contactos);
+                contactoList.Adapter = adapter;
+            }
 
             return view;
 		}
@@ -41,8 +54,15 @@ namespace Contactos.Fragments
 
             intent.PutExtra("Contacto", contacto);
 
-            StartActivity(intent);  
+            StartActivityForResult(intent,0);  
         }
+
+		public override void OnActivityResult(int requestCode, int resultCode, Intent data)
+		{
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            UpdateData();
+		}
 
 		public override void OnCreate(Bundle savedInstanceState)
 		{
@@ -76,9 +96,40 @@ namespace Contactos.Fragments
 
         private void OnQueryTextSubmit(object s, Android.Support.V7.Widget.SearchView.QueryTextSubmitEventArgs e)
         {
-            //TODO: Do something fancy when search button on keyboard is pressed
-            //Toast.MakeText(this, "Searched for: " + e.Query, ToastLength.Short).Show();
             e.Handled = true;
+        }
+
+        public override bool UserVisibleHint 
+        { 
+            get
+            {
+                return base.UserVisibleHint;
+            } 
+            set
+            {
+                if(value)
+                {
+                    UpdateData(); 
+                } 
+
+                base.UserVisibleHint = value;
+            } 
+        }
+
+        private void UpdateData()
+        {
+            contactos = ContactoData.Contacts;
+
+            if (IsFavorite)
+            {
+                contactos = contactos.Where(x => x.IsFavorite == true).ToList();
+
+                if (contactoList != null)
+                {
+                    adapter = new ContactosAdapter(contactos);
+                    contactoList.Adapter = adapter;
+                }
+            }
         }
 	}
 }

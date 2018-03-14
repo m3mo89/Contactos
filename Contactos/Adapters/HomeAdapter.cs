@@ -1,12 +1,13 @@
 ﻿using System;
 using Android.Support.V4.App;
+using Android.Views;
 using Java.Lang;
 
 namespace Contactos.Adapters
 {
     public class HomeAdapter: Android.Support.V4.App.FragmentPagerAdapter
     {
-        Android.Support.V4.App.Fragment[] fragments;
+        public Android.Support.V4.App.Fragment[] fragments;
         ICharSequence[] titles;
 
 
