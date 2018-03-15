@@ -31,6 +31,9 @@ namespace Contactos.Fragments
             var view = inflater.Inflate(Resource.Layout.Contacto, container, false);
 
             contactoList = view.FindViewById<ListView>(Resource.Id.contactoListView);
+
+            contactoList.NestedScrollingEnabled = true;
+
             contactoList.ItemClick += OnItemClick;
 
             if (contactos != null)

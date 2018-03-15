@@ -168,6 +168,11 @@
     <AndroidResource Include="Resources\mipmap-hdpi\ic_favorite_border_white_24dp.png" />
     <AndroidResource Include="Resources\menu\actions.xml" />
     <AndroidResource Include="Resources\menu\search.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_person_add_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_person_add_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_person_add_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_person_add_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_person_add_white_24dp.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
