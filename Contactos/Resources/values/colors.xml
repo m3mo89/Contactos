@@ -18,7 +18,10 @@
   <color name="blue_darker">#0091EA</color> 
   <color name="green">#8BC34A</color>
   <color name="gray">#455a64</color>
-  <color name="gray_light">#F5F5F5</color>  
+  <color name="gray_light">#F5F5F5</color> 
+  <color name="indigo">#303F9F</color>
+  <color name="teal">#009688</color>
+  <color name="orange">#FF5722</color>  
 
   <color name="tabSelectedTextColor">#90CAF9</color>  
   <color name="splash_background">#FFFFFF</color>  

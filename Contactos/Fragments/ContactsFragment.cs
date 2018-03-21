@@ -134,5 +134,16 @@ namespace Contactos.Fragments
                 }
             }
         }
+
+        public void NotifyAdapter() 
+        {
+            base.Activity.RunOnUiThread(() =>
+            {
+                adapter = new ContactosAdapter(Data.ContactoData.Contacts.OrderBy(i => i.Name).ToList());
+                contactoList.Adapter = adapter;
+                adapter.NotifyDataSetChanged();
+            });
+        }
+
 	}
 }

@@ -14,7 +14,15 @@ namespace Contactos.Helpers
         {
             if (!cache.ContainsKey(url))
             {
-                var drawable = Drawable.CreateFromStream(context.Assets.Open(url), null);
+                Drawable drawable;
+
+                try
+                {
+                    drawable = Drawable.CreateFromStream(context.Assets.Open(url), null);
+                }catch
+                {
+                    drawable = Drawable.CreateFromPath(url);
+                }
 
                 Android.Graphics.Bitmap originalBitmap = ((BitmapDrawable)drawable).Bitmap;
                 RoundedBitmapDrawable roundedDrawable = RoundedBitmapDrawableFactory.Create(context.Resources, originalBitmap);

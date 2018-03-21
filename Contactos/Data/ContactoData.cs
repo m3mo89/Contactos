@@ -6,7 +6,7 @@ namespace Contactos.Data
 {
     public static class ContactoData
     {
-        public static List<Contacto> Contacts { get; private set; }
+        public static List<Contacto> Contacts { get; set; }
 
         static ContactoData()
         {

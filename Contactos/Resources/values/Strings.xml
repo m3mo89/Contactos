@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Contactos</string>
+    <string name="phone">Telefono</string>
+    <string name="name">Nombre</string>
+    <string name="save">Guardar</string>
 </resources>
